@@ -7,9 +7,9 @@
     },
     "license": "AGPL-3.0-only",
     "autoload": {
-        "classmap": [
-            "src/"
-        ]
+        "psr-4": {
+            "TerribleTools\\DirtyDomains\\": "src/"
+        }
     },
     "require": {}
 }
