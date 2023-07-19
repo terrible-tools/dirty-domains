@@ -1,0 +1,15 @@
+{
+    "name": "terrible-tools/dirty-domains",
+    "description": "HTTP remote backend for a PowerDNS authoritative server",
+    "type": "project",
+    "require-dev": {
+        "phpunit/phpunit": "^10"
+    },
+    "license": "AGPL-3.0-only",
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    },
+    "require": {}
+}
