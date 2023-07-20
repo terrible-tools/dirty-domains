@@ -34,7 +34,7 @@ final class SoaCommand implements Command
         $payload = array(array(
             'qtype' => SoaCommand::_TYPE,
             'qname' => $this->_NAME,
-            'content' => join(' ', array($this->_NAME, SoaCommand::_TYPE, SoaCommand::_SERIAL, SoaCommand::_REFRESH, SoaCommand::_RETRY, SoaCommand::_EXPIRE, SoaCommand::_MINIMUM)),
+            'content' => join(' ', array($this->_NAME, SoaCommand::_RNAME, SoaCommand::_SERIAL, SoaCommand::_REFRESH, SoaCommand::_RETRY, SoaCommand::_EXPIRE, SoaCommand::_MINIMUM)),
             'ttl' => SoaCommand::_TTL,
             'domain_id' => SoaCommand::_DOMAIN_ID,
         ));

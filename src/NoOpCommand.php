@@ -9,8 +9,8 @@ use TerribleTools\DirtyDomains\{Command, CommandResult};
 final class NoOpCommand implements Command
 {
     private readonly int $_statusCode;
-    private readonly object $_payload;
-    public function __construct(int $statusCode = 500, object $payload = null)
+    private readonly mixed $_payload;
+    public function __construct(int $statusCode = 500, mixed $payload = null)
     {
         $this->_statusCode = $statusCode;
         $this->_payload = $payload;

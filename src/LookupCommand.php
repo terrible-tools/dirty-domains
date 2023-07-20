@@ -18,7 +18,7 @@ final class LookupCommand implements Command
     {
         $args = explode('/', $argv);
         $this->_qname = $args[0];
-        $this->_qtype = $args[1];
+        $this->_qtype = $args[1] ?? ''; // TODO : come up with a better way to handle invalid input
 
         switch ($this->_qytpe) {
             case 'SOA':
