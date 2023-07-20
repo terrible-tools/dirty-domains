@@ -20,7 +20,7 @@ final class LookupCommand implements Command
         $this->_qname = $args[0];
         $this->_qtype = $args[1] ?? ''; // TODO : come up with a better way to handle invalid input
 
-        switch ($this->_qytpe) {
+        switch ($this->_qtype) {
             case 'SOA':
                 $this->_lookupBehavior = new SoaCommand($this->_qname);
                 break;
